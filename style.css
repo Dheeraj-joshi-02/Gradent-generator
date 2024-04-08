@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins;
+    text-decoration: none;
+    list-style: none;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-size: calc(12px, 4vw, 32px);
+}
+
+body {
+    background-image: linear-gradient(to right, #5c91e5, #983fc6);
+}
+
+.navbar {
+    background: rgba(255, 255, 255, 0.35);
+    backdrop-filter: blur(10px);
+}
+
+.navbar h1 {
+    font-size: 1.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 8vh;
+    color: black;
+    backdrop-filter: blur(10px);
+}
+
+.main {
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+}
+
+.gradient-container {
+    height: calc(100% - 8vh);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.media-users {
+    max-width: 800px;
+    background: linear-gradient(to right, #dedbdb, #ddd8d8);
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 0 auto;
+    gap: 2rem;
+    color: #000;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.buttons button {
+    color: rgb(241, 233, 233);
+    border: none;
+    border-radius: 50px;
+    padding: 15px 40px;
+    margin: 0 10px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+button:hover,
+button:focus {
+    transition: transform 0.4s;
+    box-shadow: 0 0.5em 0.5em -0.4em black;
+    transform: translateY(-0.25em);
+}
+
+.buttons .btn_1 {
+    background-color: #5c91e5;
+}
+
+.buttons .btn_2 {
+    background-color: #983fc6;
+}
+
+.code-preview {
+    padding: 10px;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.35);
+    backdrop-filter: blur(10px);
+    border-left: 2px solid rgb(255, 255, 255);
+}
+
+.copy-code {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+@media only screen and (max-width: 600px) {
+    .main {
+        max-width: 100%;
+        padding: 10px;
+    }
+
+    .media-users {
+        padding: 10px;
+    }
+
+    .buttons button {
+        padding: 10px 20px;
+        font-size: 0.8rem;
+    }
+
+    .code-preview {
+        padding: 5px;
+    }
+}
